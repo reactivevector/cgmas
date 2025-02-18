@@ -1,0 +1,81 @@
+services:
+  cgmas-dev:
+    profiles:
+      - dev
+    container_name: cgmas
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    volumes:
+      - ./config/:/app/config
+      - ./logs/:/app/logs
+      - ./cgmas/:/app/cgmas
+    environment:
+      - APP_ENV=dev
+    depends_on:
+      - cgmas-redis
+      - cgmas-mongodb
+    ports:
+      - "5050:5050"
+    networks:
+      - cgmas-network
+  cgmas:
+    profiles:
+      - prod
+    container_name: cgmas
+    build:
+      context: .
+      target: prod
+    volumes:
+      - ./config/:/app/config
+      - ./logs/:/app/logs
+    environment:
+      - APP_ENV=prod
+    depends_on:
+      - cgmas-redis
+      - cgmas-mongodb
+    ports:
+      - "5050:5050"
+    networks:
+      - cgmas-network
+
+  cgmas-redis:
+    container_name: cgmas-redis
+    image: redis:alpine
+    volumes:
+      - redis-data:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - cgmas-network
+
+  cgmas-mongodb:
+    container_name: cgmas-mongodb
+    image: mongo:latest
+    volumes:
+      - mongodb-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - cgmas-network
+
+  cgmas-mongodb-express:
+    container_name: cgmas-mongodb-express
+    image: mongo-express
+    ports:
+      - "8081:8081"
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=cgmas-mongodb
+    networks:
+      - cgmas-network
+
+networks:
+  cgmas-network:
+    driver: bridge
+
+volumes:
+  redis-data:
+    driver: local
+  mongodb-data:
+    driver: local

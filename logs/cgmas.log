@@ -1,0 +1,38 @@
+2025-02-26 06:02:34,458 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://172.19.0.5:5050
+2025-02-26 06:02:34,458 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 06:02:34,460 - werkzeug - INFO -  * Restarting with stat
+2025-02-26 06:02:34,679 - werkzeug - WARNING -  * Debugger is active!
+2025-02-26 06:02:34,680 - werkzeug - INFO -  * Debugger PIN: 562-091-760
+2025-02-26 06:03:27,925 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://172.19.0.5:5050
+2025-02-26 06:03:27,926 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 06:03:27,926 - werkzeug - INFO -  * Restarting with stat
+2025-02-26 06:03:28,135 - werkzeug - WARNING -  * Debugger is active!
+2025-02-26 06:03:28,135 - werkzeug - INFO -  * Debugger PIN: 713-095-967
+2025-02-26 06:04:12,770 - werkzeug - INFO - 192.168.65.1 - - [26/Feb/2025 06:04:12] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-26 06:04:12,811 - werkzeug - INFO - 192.168.65.1 - - [26/Feb/2025 06:04:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-26 06:22:40,837 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5050
+ * Running on http://172.19.0.5:5050
+2025-02-26 06:22:40,837 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-02-26 06:22:40,839 - werkzeug - INFO -  * Restarting with stat
+2025-02-26 06:22:41,043 - werkzeug - WARNING -  * Debugger is active!
+2025-02-26 06:22:41,043 - werkzeug - INFO -  * Debugger PIN: 942-762-117
+2025-02-26 06:22:42,579 - werkzeug - INFO - 192.168.65.1 - - [26/Feb/2025 06:22:42] "[33mGET / HTTP/1.1[0m" 404 -
+2025-02-26 06:23:46,276 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:23:46,276 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:23:46,277 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:23:46,277 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:23:46,277 - werkzeug - INFO - 192.168.65.1 - - [26/Feb/2025 06:23:46] "GET /hello/ HTTP/1.1" 200 -
+2025-02-26 06:23:46,318 - werkzeug - INFO - 192.168.65.1 - - [26/Feb/2025 06:23:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-02-26 06:40:53,210 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:40:53,210 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:40:53,211 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:40:53,211 - cgmas.blueprints.hello - DEBUG - hello_world
+2025-02-26 06:40:53,212 - werkzeug - INFO - 192.168.65.1 - - [26/Feb/2025 06:40:53] "GET /hello/ HTTP/1.1" 200 -
